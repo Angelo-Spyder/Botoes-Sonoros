@@ -7,6 +7,18 @@
     <title>Audio</title>
 </head>
 <body>
-    
+    <h1>Audios</h1>
+    <audio src="BRUH sound effect for editing.mp3"></audio>
+    <button>Bruh</button>
+
+    <script>    
+        const button = document.querySelector('button');
+
+        button.addEventListener("click", function(){
+            const audio = document.querySelector('audio');
+            audio.currentTime = 2
+            audio.play()
+        })
+    </script>
 </body>
 </html>
