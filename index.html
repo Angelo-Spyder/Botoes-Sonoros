@@ -8,17 +8,24 @@
 </head>
 <body>
     <h1>Audios</h1>
-    <audio src="BRUH sound effect for editing.mp3"></audio>
-    <button>Bruh</button>
-
+    <audio class="bruh" src="BRUH sound effect for editing.mp3"></audio>
+    <audio class="rock" src="-SHOCKED SOUND EFFECT-MEME THE ROCK.mp3"></audio>
+    <button id="audio-bruh">Bruh</button>
+    <button id="audio-rock">Rock</button>
     <script>    
-        const button = document.querySelector('button');
+        const buttonB = document.querySelector('#audio-bruh');
+        const buttonR = document.querySelector("#audio-rock");
 
-        button.addEventListener("click", function(){
-            const audio = document.querySelector('audio');
-            audio.currentTime = 2
-            audio.play()
-        })
+        buttonB.addEventListener("click", function(){
+            const audio = document.querySelector('.bruh');
+            audio.currentTime = 2;
+            audio.play();
+        });
+
+        buttonR.addEventListener("click", function(){
+            const audio = document.querySelector(".rock");
+            audio.play();
+        });
     </script>
 </body>
 </html>
